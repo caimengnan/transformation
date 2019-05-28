@@ -8,14 +8,19 @@
 
 import UIKit
 
+let kHeight:CGFloat = UIScreen.main.bounds.size.height
+let kWidth:CGFloat = UIScreen.main.bounds.size.width
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        self.window = UIWindow(frame: CGRect(x: 0, y: 0, width: kWidth, height: kHeight))
+        let rootVC = NavViewController(rootViewController: OneViewController())
+        self.window?.rootViewController = rootVC
+        self.window?.makeKeyAndVisible()
         return true
     }
 

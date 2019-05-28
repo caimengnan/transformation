@@ -12,16 +12,28 @@
 		BB924D31229D129F00FA9AF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB924D2F229D129F00FA9AF1 /* Main.storyboard */; };
 		BB924D33229D12A200FA9AF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB924D32229D12A200FA9AF1 /* Assets.xcassets */; };
 		BB924D36229D12A200FA9AF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB924D34229D12A200FA9AF1 /* LaunchScreen.storyboard */; };
+		BB924D3E229D12C700FA9AF1 /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB924D3D229D12C700FA9AF1 /* NavViewController.swift */; };
+		BB924D40229D12DE00FA9AF1 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB924D3F229D12DE00FA9AF1 /* OneViewController.swift */; };
+		BB924D42229D12E200FA9AF1 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB924D41229D12E200FA9AF1 /* TwoViewController.swift */; };
+		BB924D44229D12E500FA9AF1 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB924D43229D12E500FA9AF1 /* ThreeViewController.swift */; };
+		BB924D46229D164900FA9AF1 /* TransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB924D45229D164900FA9AF1 /* TransitionAnimation.swift */; };
+		BB924D48229D164E00FA9AF1 /* BaseNaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB924D47229D164E00FA9AF1 /* BaseNaviViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BB924D28229D129F00FA9AF1 /* 转场动画效果.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "转场动画效果.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB924D28229D129F00FA9AF1 /* transformation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = transformation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB924D2B229D129F00FA9AF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB924D2D229D129F00FA9AF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB924D30229D129F00FA9AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB924D32229D12A200FA9AF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB924D35229D12A200FA9AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB924D37229D12A200FA9AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB924D3D229D12C700FA9AF1 /* NavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
+		BB924D3F229D12DE00FA9AF1 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
+		BB924D41229D12E200FA9AF1 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		BB924D43229D12E500FA9AF1 /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
+		BB924D45229D164900FA9AF1 /* TransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimation.swift; sourceTree = "<group>"; };
+		BB924D47229D164E00FA9AF1 /* BaseNaviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNaviViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +50,7 @@
 		BB924D1F229D129F00FA9AF1 = {
 			isa = PBXGroup;
 			children = (
-				BB924D2A229D129F00FA9AF1 /* 转场动画效果 */,
+				BB924D2A229D129F00FA9AF1 /* transformation */,
 				BB924D29229D129F00FA9AF1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +58,36 @@
 		BB924D29229D129F00FA9AF1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB924D28229D129F00FA9AF1 /* 转场动画效果.app */,
+				BB924D28229D129F00FA9AF1 /* transformation.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BB924D2A229D129F00FA9AF1 /* 转场动画效果 */ = {
+		BB924D2A229D129F00FA9AF1 /* transformation */ = {
 			isa = PBXGroup;
 			children = (
+				BB924D47229D164E00FA9AF1 /* BaseNaviViewController.swift */,
+				BB924D45229D164900FA9AF1 /* TransitionAnimation.swift */,
 				BB924D2B229D129F00FA9AF1 /* AppDelegate.swift */,
 				BB924D2D229D129F00FA9AF1 /* ViewController.swift */,
+				BB924D3D229D12C700FA9AF1 /* NavViewController.swift */,
+				BB924D3F229D12DE00FA9AF1 /* OneViewController.swift */,
+				BB924D41229D12E200FA9AF1 /* TwoViewController.swift */,
+				BB924D43229D12E500FA9AF1 /* ThreeViewController.swift */,
 				BB924D2F229D129F00FA9AF1 /* Main.storyboard */,
 				BB924D32229D12A200FA9AF1 /* Assets.xcassets */,
 				BB924D34229D12A200FA9AF1 /* LaunchScreen.storyboard */,
 				BB924D37229D12A200FA9AF1 /* Info.plist */,
 			);
-			path = "转场动画效果";
+			path = transformation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BB924D27229D129F00FA9AF1 /* 转场动画效果 */ = {
+		BB924D27229D129F00FA9AF1 /* transformation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB924D3A229D12A200FA9AF1 /* Build configuration list for PBXNativeTarget "转场动画效果" */;
+			buildConfigurationList = BB924D3A229D12A200FA9AF1 /* Build configuration list for PBXNativeTarget "transformation" */;
 			buildPhases = (
 				BB924D24229D129F00FA9AF1 /* Sources */,
 				BB924D25229D129F00FA9AF1 /* Frameworks */,
@@ -79,9 +97,9 @@
 			);
 			dependencies = (
 			);
-			name = "转场动画效果";
+			name = transformation;
 			productName = "转场动画效果";
-			productReference = BB924D28229D129F00FA9AF1 /* 转场动画效果.app */;
+			productReference = BB924D28229D129F00FA9AF1 /* transformation.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BB924D23229D129F00FA9AF1 /* Build configuration list for PBXProject "转场动画效果" */;
+			buildConfigurationList = BB924D23229D129F00FA9AF1 /* Build configuration list for PBXProject "transformation" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BB924D27229D129F00FA9AF1 /* 转场动画效果 */,
+				BB924D27229D129F00FA9AF1 /* transformation */,
 			);
 		};
 /* End PBXProject section */
@@ -135,8 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB924D42229D12E200FA9AF1 /* TwoViewController.swift in Sources */,
 				BB924D2E229D129F00FA9AF1 /* ViewController.swift in Sources */,
+				BB924D3E229D12C700FA9AF1 /* NavViewController.swift in Sources */,
+				BB924D44229D12E500FA9AF1 /* ThreeViewController.swift in Sources */,
 				BB924D2C229D129F00FA9AF1 /* AppDelegate.swift in Sources */,
+				BB924D46229D164900FA9AF1 /* TransitionAnimation.swift in Sources */,
+				BB924D40229D12DE00FA9AF1 /* OneViewController.swift in Sources */,
+				BB924D48229D164E00FA9AF1 /* BaseNaviViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +307,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "转场动画效果/Info.plist";
+				DEVELOPMENT_TEAM = TCQ6669N52;
+				INFOPLIST_FILE = transformation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +325,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "转场动画效果/Info.plist";
+				DEVELOPMENT_TEAM = TCQ6669N52;
+				INFOPLIST_FILE = transformation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BB924D23229D129F00FA9AF1 /* Build configuration list for PBXProject "转场动画效果" */ = {
+		BB924D23229D129F00FA9AF1 /* Build configuration list for PBXProject "transformation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB924D38229D12A200FA9AF1 /* Debug */,
@@ -324,7 +350,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB924D3A229D12A200FA9AF1 /* Build configuration list for PBXNativeTarget "转场动画效果" */ = {
+		BB924D3A229D12A200FA9AF1 /* Build configuration list for PBXNativeTarget "transformation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB924D3B229D12A200FA9AF1 /* Debug */,
